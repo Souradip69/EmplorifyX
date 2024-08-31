@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="paymentform.css">
+    <title>PaymentForm</title>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1>Payment Form</h1>
+        <hr>
+        <h2>User Details</h2>
+        <p>Name:*<input type="text" name="name" placeholder="enter your name"></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" id="Male">
+                Female <input type="radio" name="gender" id="Female">
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="Address" id="Address" cols="200" rows="04" placeholder="enter your address here"></textarea></p>
+        <p>
+            Email:*<input type="email" name="email" id="email"required placeholder="abc1234@gmail.com">
+        </p>
+        <p>
+            Pincode: *<input type="number" name="Pincode" id="Pincode"required placeholder="123456">
+        </p>
+        <p>
+            Phone No.: *<input type="number" name="number" id="number"required placeholder="1234567890">
+        </p>
+        <hr>
+        <h3>Payment Details</h3>
+        <p>
+            <img src="images.jpg" alt="an image" width="20%">
+            Card Type:*<select name="card_type" id="card_type"required> 
+                <img src="images.jpg" alt="an image">
+                <option value="">--Select Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="Rupay_Card">Rupay</option>
+                <option value="Master_Card">Master Card</option>
+                <option value="Credit_Card">Credit Card</option>
+            </select>                
+        </p>
+        <p>
+            Card Number: <input type="number" name="number" id="number" placeholder="123456789">
+        </p>
+        <p>
+            Expiration Date: <input type="date" name="date" id="date">
+        </p>
+        <p>
+            CVV Number: <input type="password" name="password" id="password">
+        </p>
+        <input type="submit" value="Pay Now">
+
+    </form>
+   </div> 
+</body>
